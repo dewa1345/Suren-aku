@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Portofolio Tailwind cs</title>
+
+    <style>
+      @keyframes pulse {
+        0% { transform: scale(0); }
+        50% { transform: scale(1.08); }
+        100% { transform: scale(1); }
+      }
+    
+      .social{
+        animation: pulse 1.5s infinite ease-in-out;
+      }
+
+      .menu-button {
+      background-color: #4f46e5; /* Indigo-600 */
+      color: white;
+      padding: 10px 20px;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .menu-options {
+      margin-top: 10px;
+      display: none; /* Hidden by default */
+    }
+
+    .menu-options a {
+      display: block;
+      background-color: #6366f1;
+      color: white;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .show {
+      display: block;
+    }
+    </style>
+    
+</head>
+<body>
+    <!-- perkenalan -->
+     <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-3xl font-bold text-blue-500">Hello 🤓, I am <span class= "block font-bold text-slate-900 text-4xl">A. Dewa Fortuna Mogot </span> </h1>
+                    <h2 class=" font-semibold text-2xl mb-5">Seorang Mahasiswa IMT</h2>
+                    <p class="font-medium text-slate-600 mb-10 leading-relaxed text-2xl">I am still on my first years as an programmer😎,  over these past years i've been been learning a built about UI/UX  Java language and also python😵,
+                        and right now i am learning about tailwind and bootstrap😋.
+                    
+                        Well, outside of college life, I like playing games and watching anime. I used to have pets like cats and fish, but they kept dying over and over, so I thought maybe I shouldn't be a pet owner.</p>
+
+                        <button class="menu-button" onclick="toggleMenu()">Contact Me Here</button>
+
+                        
+                          <div id="menuContent" class="menu-options">
+                            <div class="flex space-x-4">
+                          <a href="https://github.com/dewa1345"  class="bg-primary bg-indigo-500 text-white px-6 py-3 rounded-lg font-medium transition social">My Github</a>
+                          <a href="https://www.linkedin.com/in/a-mogot-900bb233a/"  class="bg-primary bg-indigo-500 text-white px-6 py-3 rounded-lg font-medium transition social">LinkedIn</a>
+                          <a href="https://www.instagram.com/dewaf_m/" class="bg-primary bg-indigo-500 text-white px-6 py-3 rounded-lg font-medium transition social">Instagram</a>
+                          </div>
+
+            </div>
+            <script>
+      function toggleMenu() {
+      const menu = document.getElementById('menuContent');
+      menu.classList.toggle('show'); // Show/hide the menu
+    }
+            </script>
+                    
+                </div>
+                <div class = "w-full self-end px-4 lg:w-1/2" >
+                    <div class="relative mt-10">
+                        <img src="dewa4.png" alt="dewa"
+                        class="max-w-full mx-auto">
+                        <span class="absolute bottom-20 -z-10 left-1/2 -translate-x-1/2">
+                            <svg width="400" height="250" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#2b7fff" d="M62,-32.5C72.6,-17.4,68.1,9.7,55.3,31.2C42.4,52.8,21.2,68.9,-2.7,70.5C-26.6,72,-53.1,59,-62.8,39.3C-72.4,19.6,-65.1,-6.9,-51.8,-23.5C-38.5,-40.1,-19.3,-46.8,3.2,-48.6C25.7,-50.5,51.4,-47.5,62,-32.5Z" transform="translate(100 100) scale(1.5)" />
+                              </svg>
+                        </span>
+                    </div>
+                    <div>
+                        <section class="relative bg-white py-24 sm:py-32">
+                            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                              <h2 class="text-center text-4xl font-bold tracking-tight text-blue-600 sm:text-5xl mb-12">
+                                List of Skills
+                              </h2>
+                              <div class="mx-auto grid max-w-4xl grid-cols-2 gap-x-10 gap-y-12 sm:grid-cols-3 lg:max-w-6xl  items-center">
+                                <img class="w-full max-h-16 object-contain transition-transform duration-300 hover:scale-105" src="java.png" alt="Java Logo">
+                                <img class="w-full max-h-16 object-contain transition-transform duration-300 hover:scale-105" src="html.png" alt="HTML Logo">
+                                <img class="w-full max-h-16 object-contain transition-transform duration-300 hover:scale-105" src="python.png" alt="Python Logo">
+                                <img class="w-full max-h-16 object-contain transition-transform duration-300 hover:scale-105" src="css.png" alt="CSS Logo">
+                              </div>
+                            </div>
+                          </section>
+                          
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
